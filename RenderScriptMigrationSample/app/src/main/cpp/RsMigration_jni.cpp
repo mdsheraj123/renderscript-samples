@@ -37,7 +37,7 @@ Java_com_android_example_rsmigration_VulkanImageProcessor_initVulkanProcessor(
         JNIEnv* env, jobject /* this */, jobject _assetManager) {
     auto* assetManager = AAssetManager_fromJava(env, _assetManager);
     RET_CHECK(assetManager != nullptr);
-    auto processor = ImageProcessor::create(/*enableDebug=*/true, assetManager);
+    auto processor = ImageProcessor::create(/*enableDebug=*/false, assetManager);
     return static_cast<jlong>(reinterpret_cast<uintptr_t>(processor.release()));
 }
 

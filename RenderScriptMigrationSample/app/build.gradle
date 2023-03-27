@@ -16,7 +16,7 @@ android {
         applicationId "com.android.example.rsmigration"
         minSdkVersion 29
         targetSdkVersion 31
-        ndkVersion '22.0.7026061'
+        ndkVersion '25.2.9519653'
         renderscriptTargetApi 24
         versionCode 1
         versionName "1.0"
